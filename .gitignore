@@ -27,3 +27,5 @@
 .idea/vcs.xml
 build/createMcpToSrg/output.tsrg
 build/extractSrg/output.srg
+build/classes/java/main/com/lypaka/betterpokeitem/Utils.class
+build/libs/BetterPokeItem-1.16.5-1.0.1.jar
