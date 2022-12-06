@@ -117,11 +117,19 @@ public class Utils {
                             break;
 
                         case "palette":
-                            pokemon.setPalette(value);
+                            if (!value.equalsIgnoreCase("none")) {
+
+                                pokemon.setPalette(value);
+
+                            }
                             break;
 
                         case "nickname":
-                            pokemon.setNickname(FancyText.getFormattedText(value));
+                            if (!value.equalsIgnoreCase("none")) {
+
+                                pokemon.setNickname(FancyText.getFormattedText(value));
+
+                            }
                             break;
 
                         case "friendship":
@@ -151,7 +159,11 @@ public class Utils {
                             break;
 
                         case "mint nature":
-                            pokemon.setMintNature(Nature.natureFromString(value));
+                            if (!value.equalsIgnoreCase("none")) {
+
+                                pokemon.setMintNature(Nature.natureFromString(value));
+
+                            }
                             break;
 
                     }

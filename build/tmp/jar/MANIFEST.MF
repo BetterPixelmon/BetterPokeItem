@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: betterpokeitem
-Implementation-Version: 1.16.5-1.0.0
+Implementation-Version: 1.16.5-1.0.1
 Specification-Title: betterpokeitem
-Implementation-Timestamp: 2022-12-06T14:49:51-0600
+Implementation-Timestamp: 2022-12-06T17:38:59-0600
 Specification-Version: 1
 
