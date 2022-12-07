@@ -189,16 +189,9 @@ public class Utils {
             }
             if (s.contains("OTUUID: ")) {
 
-                String value = s.replace("OTUUID: ", "");
-                try {
-
-                    otUUID = UUID.fromString(value);
-
-                } catch (IllegalArgumentException er) {
-
-                    BetterPokeItem.logger.error("Detected an issue with owner UUID on the Pokemon, setting to null");
-
-                }
+                String value = s.replace("OTUUID: ", "").replace(" ", "");
+                System.out.println("Using value " + value + " in the UUID.fromString() method");
+                otUUID = UUID.fromString(value);
 
             }
 
