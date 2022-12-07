@@ -46,9 +46,9 @@ public class Utils {
                         pokemon.getMoveset().clear();
                         for (String move : valueSplit) {
 
-                            Attack attack = new Attack(move);
                             if (!move.equalsIgnoreCase("none")) {
 
+                                Attack attack = new Attack(move);
                                 pokemon.getMoveset().add(attack);
 
                             }
