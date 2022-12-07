@@ -189,8 +189,13 @@ public class Utils {
             }
             if (s.contains("OTUUID: ")) {
 
-                String value = s.replace("OTUUID: ", "").replace(" ", "");
-                System.out.println("Using value " + value + " in the UUID.fromString() method");
+                // This is even incredibly stupider
+                String value = s.replace("§0", "").replace("§1", "").replace("§2", "").replace("§3", "")
+                        .replace("§4", "").replace("§5", "").replace("§6", "").replace("§7", "")
+                        .replace("§8", "").replace("§9", "").replace("§a", "").replace("§b", "")
+                        .replace("§c", "").replace("§d", "").replace("§e", "").replace("§f", "")
+                        .replace("§k", "").replace("§l", "").replace("§m", "").replace("§n", "")
+                        .replace("§o", "").replace("§r", "").replace("OTUUID: ", "").replace(" ", "");
                 otUUID = UUID.fromString(value);
 
             }
